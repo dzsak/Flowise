@@ -1,4 +1,4 @@
-app: Flowise-631a
+app: flowise-631a
 env: preview
 namespace: default
 chart:
