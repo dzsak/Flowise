@@ -2,7 +2,9 @@ app: Flowise-631a
 env: preview
 namespace: default
 chart:
-  name: ""
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
 values:
   containerPort: 3000
   gitRepository: dzsak/Flowise
