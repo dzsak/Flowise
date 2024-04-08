@@ -10,9 +10,10 @@ values:
   gitRepository: dzsak/Flowise
   gitSha: '{{ .SHA }}'
   image:
+    dockerfile: Dockerfile
     registry: ghcrRegistry
     repository: ghcr.io/dzsak/{{ .APP }}
-    strategy: buildpacks
+    strategy: dockerfile
     tag: '{{ .SHA }}'
   imagePullSecrets:
     - Flowise-631a-ghcrregistry-pullsecret
