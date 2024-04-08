@@ -17,6 +17,6 @@ values:
     tag: '{{ .SHA }}'
   imagePullSecrets:
     - flowise-631a-ghcrregistry-pullsecret
-  replicas: 1
+  replicas: 2
   resources:
     ignoreLimits: true
