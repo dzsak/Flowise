@@ -1,0 +1,19 @@
+app: Flowise-631a
+env: preview
+namespace: default
+chart:
+  name: ""
+values:
+  containerPort: 3000
+  gitRepository: dzsak/Flowise
+  gitSha: '{{ .SHA }}'
+  image:
+    registry: ghcrRegistry
+    repository: ghcr.io/dzsak/{{ .APP }}
+    strategy: buildpacks
+    tag: '{{ .SHA }}'
+  imagePullSecrets:
+    - Flowise-631a-ghcrregistry-pullsecret
+  replicas: 1
+  resources:
+    ignoreLimits: true
