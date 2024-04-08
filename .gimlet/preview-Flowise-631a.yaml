@@ -16,7 +16,7 @@ values:
     strategy: dockerfile
     tag: '{{ .SHA }}'
   imagePullSecrets:
-    - Flowise-631a-ghcrregistry-pullsecret
+    - flowise-631a-ghcrregistry-pullsecret
   replicas: 1
   resources:
     ignoreLimits: true
